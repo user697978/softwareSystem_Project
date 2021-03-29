@@ -29,7 +29,8 @@
 	<mvc:view-controller path="/shop/index.do" view-name="index"/>
 	<mvc:view-controller path="/shop/signonForm.do" view-name="SignonForm"/> 
 	<mvc:view-controller path="/shop/mypage/auction/list.do" view-name="Auction/Mypage_Auction_List"/>
-	<mvc:view-controller path="/shop/mypage/auction/detail.do" view-name="Auction/Mypage_Auction_detail"/>  
+	<mvc:view-controller path="/shop/mypage/auction/detail.do" view-name="Auction/Mypage_Auction_detail"/>
+	<mvc:view-controller path="/shop/auction/add.do" view-name="Auction/Auction_Add"/> 
 	<mvc:interceptors>
 		<mvc:interceptor>
     	    <mvc:mapping path="/shop/editAccount.do"/>
