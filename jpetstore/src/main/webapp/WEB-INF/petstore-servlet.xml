@@ -32,6 +32,7 @@
 	<mvc:view-controller path="/shop/mypage/auction/detail.do" view-name="Auction/Mypage_Auction_detail"/>
 	<mvc:view-controller path="/shop/auction/add.do" view-name="Auction/Auction_Add"/> 
 	<mvc:view-controller path="/shop/auction/detail.do" view-name="Auction/Detail"/>
+	<mvc:view-controller path="/shop/auction/list.do" view-name="Auction/Auction_List"/>
 	<mvc:interceptors>
 		<mvc:interceptor>
     	    <mvc:mapping path="/shop/editAccount.do"/>
