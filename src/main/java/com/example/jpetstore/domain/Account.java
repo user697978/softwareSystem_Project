@@ -2,87 +2,191 @@ package com.example.jpetstore.domain;
 
 import java.io.Serializable;
 
-
 @SuppressWarnings("serial")
 public class Account implements Serializable {
 
-  /* Private Fields */
+	/* Private Fields */
 
-  private String username;
-  private String password;
-  private String email;
-  private String firstName;
-  private String lastName;
-  private String status;
-  private String address1;
-  private String address2;
-  private String city;
-  private String state;
-  private String zip;
-  private String country;
-  private String phone;
-  private String favouriteCategoryId;
-  private String languagePreference;
-  private boolean listOption;
-  private boolean bannerOption;
-  private String bannerName;
+	private String username;	//사원번호
+	private String password;
+	private String email;
+	private String firstName;
+	private String lastName;
+	private String status;
+	private String address;
+	private String phone;
+	private String nickName;
+	private String bank;
+	private String cardNumber;
+	private String cvc;
+	private String expiryDate;
+	private String cardPassword;
+	private String favouriteCategoryId;
+	private String languagePreference;
+	private boolean listOption;
+	private boolean bannerOption;
+	private String bannerName;
 
-  /* JavaBeans Properties */
+	/* JavaBeans Properties */
 
-  public String getUsername() { return username; }
-  public void setUsername(String username) { this.username = username; }
+	public String getUsername() {
+		return username;
+	}
 
-  public String getPassword() { return password; }
-  public void setPassword(String password) { this.password = password; }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-  public String getEmail() { return email; }
-  public void setEmail(String email) { this.email = email; }
+	public String getPassword() {
+		return password;
+	}
 
-  public String getFirstName() { return firstName; }
-  public void setFirstName(String firstName) { this.firstName = firstName; }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-  public String getLastName() { return lastName; }
-  public void setLastName(String lastName) { this.lastName = lastName; }
+	public String getEmail() {
+		return email;
+	}
 
-  public String getStatus() { return status; }
-  public void setStatus(String status) { this.status = status; }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-  public String getAddress1() { return address1; }
-  public void setAddress1(String address1) { this.address1 = address1; }
+	public String getFirstName() {
+		return firstName;
+	}
 
-  public String getAddress2() { return address2; }
-  public void setAddress2(String address2) { this.address2 = address2; }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-  public String getCity() { return city; }
-  public void setCity(String city) { this.city = city; }
+	public String getLastName() {
+		return lastName;
+	}
 
-  public String getState() { return state; }
-  public void setState(String state) { this.state = state; }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
-  public String getZip() { return zip; }
-  public void setZip(String zip) { this.zip = zip; }
+	public String getStatus() {
+		return status;
+	}
 
-  public String getCountry() { return country; }
-  public void setCountry(String country) { this.country = country; }
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
-  public String getPhone() { return phone; }
-  public void setPhone(String phone) { this.phone = phone; }
+	public String getAddress() {
+		return address;
+	}
 
-  public String getFavouriteCategoryId() { return favouriteCategoryId; }
-  public void setFavouriteCategoryId(String favouriteCategoryId) { this.favouriteCategoryId = favouriteCategoryId; }
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-  public String getLanguagePreference() { return languagePreference; }
-  public void setLanguagePreference(String languagePreference) { this.languagePreference = languagePreference; }
+	public String getPhone() {
+		return phone;
+	}
 
-  public boolean isListOption() { return listOption; }
-  public void setListOption(boolean listOption) { this.listOption = listOption; }
-	public int getListOptionAsInt() { return listOption ? 1 : 0; }
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 
-  public boolean isBannerOption() { return bannerOption; }
-  public void setBannerOption(boolean bannerOption) { this.bannerOption = bannerOption; }
-	public int getBannerOptionAsInt() { return bannerOption ? 1 : 0; }
+	public String getNickName() {
+		return nickName;
+	}
 
-  public String getBannerName() { return bannerName; }
-  public void setBannerName(String bannerName) { this.bannerName = bannerName; }
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
+	public String getBank() {
+		return bank;
+	}
+
+	public void setBank(String bank) {
+		this.bank = bank;
+	}
+
+	public String getCardNumber() {
+		return cardNumber;
+	}
+
+	public void setCardNumber(String cardNumber) {
+		this.cardNumber = cardNumber;
+	}
+
+	public String getCvc() {
+		return cvc;
+	}
+
+	public void setCvc(String cvc) {
+		this.cvc = cvc;
+	}
+
+	public String getExpiryDate() {
+		return expiryDate;
+	}
+
+	public void setExpiryDate(String expiryDate) {
+		this.expiryDate = expiryDate;
+	}
+
+	public String getCardPassword() {
+		return cardPassword;
+	}
+
+	public void setCardPassword(String cardPassword) {
+		this.cardPassword = cardPassword;
+	}
+
+	public String getFavouriteCategoryId() {
+		return favouriteCategoryId;
+	}
+
+	public void setFavouriteCategoryId(String favouriteCategoryId) {
+		this.favouriteCategoryId = favouriteCategoryId;
+	}
+
+	public String getLanguagePreference() {
+		return languagePreference;
+	}
+
+	public void setLanguagePreference(String languagePreference) {
+		this.languagePreference = languagePreference;
+	}
+
+	public boolean isListOption() {
+		return listOption;
+	}
+
+	public void setListOption(boolean listOption) {
+		this.listOption = listOption;
+	}
+
+	public int getListOptionAsInt() {
+		return listOption ? 1 : 0;
+	}
+
+	public boolean isBannerOption() {
+		return bannerOption;
+	}
+
+	public void setBannerOption(boolean bannerOption) {
+		this.bannerOption = bannerOption;
+	}
+
+	public int getBannerOptionAsInt() {
+		return bannerOption ? 1 : 0;
+	}
+
+	public String getBannerName() {
+		return bannerName;
+	}
+
+	public void setBannerName(String bannerName) {
+		this.bannerName = bannerName;
+	}
 
 }

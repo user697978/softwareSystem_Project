@@ -29,6 +29,12 @@
 	<mvc:view-controller path="/shop/index.do" view-name="index"/>
 	<mvc:view-controller path="/shop/signonForm.do" view-name="SignonForm"/> 
 	
+	<!-- 회원간 거래 -->
+	<mvc:view-controller path="/shop/secondhand/index.do" view-name="secondhand/index"/>
+	
+	<!-- 경매 -->
+	<mvc:view-controller path="/shop/auction/index.do" view-name="auction/index"/>
+	
 	<mvc:interceptors>
 		<mvc:interceptor>
     	    <mvc:mapping path="/shop/editAccount.do"/>

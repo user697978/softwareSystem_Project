@@ -42,13 +42,14 @@ create table account (
     firstname varchar(80) not null,
     lastname varchar(80) not null,
     status varchar(2)  null,
-    addr1 varchar(80) not null,
-    addr2 varchar(40) null,
-    city varchar(80) not  null,
-    state varchar(80) not null,
-    zip varchar(20) not null,
-    country varchar(20) not null,
+    address varchar(80) not null,
     phone varchar(80) not null,
+    nickname varchar(80) not null,
+    bank varchar(80) not null,
+    cardnumber varchar(80) not null,
+    cvc varchar(20) not null,
+    expirydate  varchar(7) not null,
+    cardpassword varchar(20) not null,
     constraint pk_account primary key (userid)
 );
 

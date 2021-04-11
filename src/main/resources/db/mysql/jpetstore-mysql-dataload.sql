@@ -4,8 +4,8 @@ INSERT INTO sequence VALUES ('linenum', 1000);
 INSERT INTO signon VALUES ('j2ee','j2ee');
 INSERT INTO signon VALUES ('ACID','ACID');
 
-INSERT INTO account VALUES ('j2ee','yourname@yourdomain.com','ABC', 'XYX', 'OK', '901 San Antonio Road', 'MS UCUP02-206', 'Palo Alto', 'CA', '94303', 'USA',  '555-555-5555');
-INSERT INTO account VALUES ('ACID','acid@yourdomain.com','ABC', 'XYX', 'OK', '901 San Antonio Road', 'MS UCUP02-206', 'Palo Alto', 'CA', '94303', 'USA',  '555-555-5555');
+INSERT INTO account VALUES ('j2ee','yourname@yourdomain.com','ABC', 'XYX', 'OK', '901 San Antonio Road', '555-555-5555', 'nickname1', 'KB Bank', '0000 0000 0000 0000', '123', '12/03', '0000');
+INSERT INTO account VALUES ('ACID','acid@yourdomain.com','ABC', 'XYX', 'OK', '901 San Antonio Road', '555-555-5555', 'nickname2', 'KB Bank', '0000 1111 0000 3333', '321', '12/13', '9988');
 
 INSERT INTO profile VALUES ('j2ee','english','DOGS','1','1');
 INSERT INTO profile VALUES ('ACID','english','CATS','1','1');

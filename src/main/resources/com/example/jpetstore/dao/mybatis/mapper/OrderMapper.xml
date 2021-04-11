@@ -7,22 +7,12 @@
 
   <select id="getOrder" resultType="Order">
     select
-      BILLADDR1 AS billAddress1,
-      BILLADDR2 AS billAddress2,
-      BILLCITY,
-      BILLCOUNTRY,
-      BILLSTATE,
+      BILLADDR AS billAddress,
       BILLTOFIRSTNAME,
       BILLTOLASTNAME,
-      BILLZIP,
-      SHIPADDR1 AS shipAddress1,
-      SHIPADDR2 AS shipAddress2,
-      SHIPCITY,
-      SHIPCOUNTRY,
-      SHIPSTATE,
+      SHIPADDR AS shipAddress,
       SHIPTOFIRSTNAME,
       SHIPTOLASTNAME,
-      SHIPZIP,
       CARDTYPE,
       COURIER,
       CREDITCARD,
@@ -40,22 +30,12 @@
 
   <select id="getOrdersByUsername" resultType="Order">
     SELECT
-      BILLADDR1 AS billAddress1,
-      BILLADDR2 AS billAddress2,
-      BILLCITY,
-      BILLCOUNTRY,
-      BILLSTATE,
+      BILLADDR AS billAddress,
       BILLTOFIRSTNAME,
       BILLTOLASTNAME,
-      BILLZIP,
-      SHIPADDR1 AS shipAddress1,
-      SHIPADDR2 AS shipAddress2,
-      SHIPCITY,
-      SHIPCOUNTRY,
-      SHIPSTATE,
+      SHIPADDR AS shipAddress,
       SHIPTOFIRSTNAME,
       SHIPTOLASTNAME,
-      SHIPZIP,
       CARDTYPE,
       COURIER,
       CREDITCARD,
@@ -73,13 +53,10 @@
   </select>
 
   <insert id="insertOrder">
-    INSERT INTO ORDERS (ORDERID, USERID, ORDERDATE, SHIPADDR1, SHIPADDR2, SHIPCITY, SHIPSTATE,
-      SHIPZIP, SHIPCOUNTRY, BILLADDR1, BILLADDR2, BILLCITY, BILLSTATE, BILLZIP, BILLCOUNTRY,
-      COURIER, TOTALPRICE, BILLTOFIRSTNAME, BILLTOLASTNAME, SHIPTOFIRSTNAME, SHIPTOLASTNAME,
+    INSERT INTO ORDERS (ORDERID, USERID, ORDERDATE, SHIPADDR, BILLADDR, COURIER, 
+    TOTALPRICE, BILLTOFIRSTNAME, BILLTOLASTNAME, SHIPTOFIRSTNAME, SHIPTOLASTNAME,
       CREDITCARD, EXPRDATE, CARDTYPE, LOCALE)
-    VALUES(#{orderId}, #{username}, #{orderDate}, #{shipAddress1}, #{shipAddress2,jdbcType=VARCHAR}, #{shipCity},
-      #{shipState}, #{shipZip}, #{shipCountry}, #{billAddress1}, #{billAddress2,jdbcType=VARCHAR}, #{billCity},
-      #{billState}, #{billZip}, #{billCountry}, #{courier}, #{totalPrice}, #{billToFirstName}, #{billToLastName},
+    VALUES(#{orderId}, #{username}, #{orderDate}, #{shipAddress}, #{billAddress}, #{courier}, #{totalPrice}, #{billToFirstName}, #{billToLastName},
       #{shipToFirstName}, #{shipToLastName}, #{creditCard}, #{expiryDate}, #{cardType}, #{locale})
   </insert>
 
@@ -89,15 +66,10 @@
   </insert>
   
   <insert id="msSqlServerInsertOrder" useGeneratedKeys="true">
-  	insert into orders (userid, orderdate, shipaddr1, shipaddr2,
-	  	shipcity, shipstate, shipzip, shipcountry, billaddr1, billaddr2,
-	  	billcity, billstate, billzip, billcountry, courier, totalprice,
+  	insert into orders (userid, orderdate, shipaddr, billaddr, courier, totalprice,
 	  	billtofirstname, billtolastname, shiptofirstname, shiptolastname,
 	  	creditcard, exprdate, cardtype, locale) values (#username#,
-	  	#orderDate#, #shipAddress1#, #shipAddress2:VARCHAR#, #shipCity#,
-	  	#shipState#, #shipZip#, #shipCountry#, #billAddress1#,
-	  	#billAddress2:VARCHAR#, #billCity#, #billState#, #billZip#,
-	  	#billCountry#, #courier#, #totalPrice#, #billToFirstName#,
+	  	#orderDate#, #shipAddress#, #billAddress#, #courier#, #totalPrice#, #billToFirstName#,
 	  	#billToLastName#, #shipToFirstName#, #shipToLastName#,
 	  	#creditCard#, #expiryDate#, #cardType#, #locale#); 
   	select @@identity as value

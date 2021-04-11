@@ -25,34 +25,39 @@
       <form:errors path="account.phone" cssClass="error" /></td>
   </tr>
   <tr>
-    <td>Address 1:</td>
-    <td><form:input path="account.address1" />
-      <form:errors path="account.address1" cssClass="error" /></td>
+    <td>Address:</td>
+    <td><form:input path="account.address" />
+      <form:errors path="account.address" cssClass="error" /></td>
   </tr>
   <tr>
-    <td>Address 2:</td>
-    <td><form:input path="account.address2" />
-      <form:errors path="account.address2" cssClass="error" /></td>
+    <td>Nickname:</td>
+    <td><form:input path="account.nickName" />
+      <form:errors path="account.nickName" cssClass="error" /></td>
   </tr>
   <tr>
-    <td>City:</td>
-    <td><form:input path="account.city" /> 
-      <form:errors path="account.city" cssClass="error" /></td>
+    <td>Bank:</td>
+    <td><form:input path="account.bank" />
+      <form:errors path="account.bank" cssClass="error" /></td>
   </tr>
   <tr>
-    <td>State:</td>
-    <td><form:input path="account.state" /> 
-      <form:errors path="account.state" cssClass="error" /></td>
+    <td>Card Number:</td>
+    <td><form:input path="account.cardNumber" />
+      <form:errors path="account.cardNumber" cssClass="error" /></td>
   </tr>
   <tr>
-    <td>Zip:</td>
-    <td><form:input path="account.zip" /> 
-      <form:errors path="account.zip" cssClass="error" /></td>
+    <td>CVC:</td>
+    <td><form:input path="account.cvc" />
+      <form:errors path="account.cvc" cssClass="error" /></td>
   </tr>
   <tr>
-    <td>Country:</td>
-    <td><form:input path="account.country" />
-      <form:errors path="account.country" cssClass="error" /></td>
+    <td>Expiry Date:</td>
+    <td><form:input path="account.expiryDate" />
+      <form:errors path="account.expiryDate" cssClass="error" /></td>
+  </tr>
+  <tr>
+    <td>Card Password:</td>
+    <td><form:input path="account.cardPassword" />
+      <form:errors path="account.cardPassword" cssClass="error" /></td>
   </tr>
 </table>
 

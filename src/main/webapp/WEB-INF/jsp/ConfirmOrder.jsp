@@ -34,28 +34,8 @@
       <td>${orderForm.order.billToLastName}</td>
     </tr>
     <tr>
-      <td>Address 1:</td>
-      <td>${orderForm.order.billAddress1}</td>
-    </tr>
-    <tr>
-      <td>Address 2:</td>
-      <td>${orderForm.order.billAddress2}</td>
-    </tr>
-    <tr>
-      <td>City:</td>
-      <td>${orderForm.order.billCity}</td>
-    </tr>
-    <tr>
-      <td>State:</td>
-      <td>${orderForm.order.billState}</td>
-    </tr>
-    <tr>
-      <td>Zip:</td>
-      <td>${orderForm.order.billZip}</td>
-    </tr>
-    <tr>
-      <td>Country:</td>
-      <td>${orderForm.order.billCountry}</td>
+      <td>Address:</td>
+      <td>${orderForm.order.billAddress}</td>
     </tr>
     <tr>
       <td colspan="2">
@@ -70,28 +50,8 @@
       <td>${orderForm.order.shipToLastName}</td>
     </tr>
     <tr>
-      <td>Address 1:</td>
-      <td>${orderForm.order.shipAddress1}</td>
-    </tr>
-    <tr>
-      <td>Address 2:</td>
-      <td>${orderForm.order.shipAddress2}</td>
-    </tr>
-    <tr>
-      <td>City:</td>
-      <td>${orderForm.order.shipCity}</td>
-    </tr>
-    <tr>
-      <td>State:</td>
-      <td>${orderForm.order.shipState}</td>
-    </tr>
-    <tr>
-      <td>Zip:</td>
-      <td>${orderForm.order.shipZip}</td>
-    </tr>
-    <tr>
-      <td>Country:</td>
-      <td>${orderForm.order.shipCountry}</td>
+      <td>Address:</td>
+      <td>${orderForm.order.shipAddress}</td>
     </tr>
   </table>
   <p>

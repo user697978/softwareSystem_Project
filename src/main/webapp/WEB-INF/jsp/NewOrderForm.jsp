@@ -44,34 +44,9 @@
         <form:errors path="order.billToLastName" /></td>
     </tr>
     <tr>
-      <td>Address 1:</td>
-      <td><form:input path="order.billAddress1" />
-        <form:errors path="order.billAddress1" /></td>
-    </tr>
-    <tr>
-      <td>Address 2:</td>
-      <td><form:input path="order.billAddress2" />
-        <form:errors path="order.billAddress2" /></td>
-    </tr>
-    <tr>
-      <td>City:</td>
-      <td><form:input path="order.billCity" /> 
-        <form:errors path="order.billCity" /></td>
-    </tr>
-    <tr>
-      <td>State:</td>
-      <td><form:input path="order.billState" />
-        <form:errors path="order.billState" /></td>
-    </tr>
-    <tr>
-      <td>Zip:</td>
-      <td><form:input path="order.billZip" /> 
-        <form:errors path="order.billZip" /></td>
-    </tr>
-    <tr>
-      <td>Country:</td>
-      <td><form:input path="order.billCountry" /> 
-        <form:errors path="order.billCountry" /></td>
+      <td>Address:</td>
+      <td><form:input path="order.billAddress" />
+        <form:errors path="order.billAddress" /></td>
     </tr>
     <tr>
       <td colspan="2">

@@ -50,28 +50,8 @@
       <td><c:out value="${order.billToLastName}" /></td>
     </tr>
     <tr>
-      <td>Address 1:</td>
-      <td><c:out value="${order.billAddress1}" /></td>
-    </tr>
-    <tr>
-      <td>Address 2:</td>
-      <td><c:out value="${order.billAddress2}" /></td>
-    </tr>
-    <tr>
-      <td>City:</td>
-      <td><c:out value="${order.billCity}" /></td>
-    </tr>
-    <tr>
-      <td>State:</td>
-      <td><c:out value="${order.billState}" /></td>
-    </tr>
-    <tr>
-      <td>Zip:</td>
-      <td><c:out value="${order.billZip}" /></td>
-    </tr>
-    <tr>
-      <td>Country:</td>
-      <td><c:out value="${order.billCountry}" /></td>
+      <td>Address:</td>
+      <td><c:out value="${order.billAddress}" /></td>
     </tr>
     <tr>
       <td colspan="2"><font color="green" size="4"><b>Shipping Address</b></font></td>
@@ -85,28 +65,8 @@
       <td><c:out value="${order.shipToLastName}" /></td>
     </tr>
     <tr>
-      <td>Address 1:</td>
-      <td><c:out value="${order.shipAddress1}" /></td>
-    </tr>
-    <tr>
-      <td>Address 2:</td>
-      <td><c:out value="${order.shipAddress2}" /></td>
-    </tr>
-    <tr>
-      <td>City:</td>
-      <td><c:out value="${order.shipCity}" /></td>
-    </tr>
-    <tr>
-      <td>State:</td>
-      <td><c:out value="${order.shipState}" /></td>
-    </tr>
-    <tr>
-      <td>Zip:</td>
-      <td><c:out value="${order.shipZip}" /></td>
-    </tr>
-    <tr>
-      <td>Country:</td>
-      <td><c:out value="${order.shipCountry}" /></td>
+      <td>Address:</td>
+      <td><c:out value="${order.shipAddress}" /></td>
     </tr>
     <tr>
       <td>Courier:</td>

@@ -14,18 +14,8 @@ public class Order implements Serializable {
   private int orderId;
   private String username;
   private Date orderDate;
-  private String shipAddress1;
-  private String shipAddress2;
-  private String shipCity;
-  private String shipState;
-  private String shipZip;
-  private String shipCountry;
-  private String billAddress1;
-  private String billAddress2;
-  private String billCity;
-  private String billState;
-  private String billZip;
-  private String billCountry;
+  private String shipAddress;
+  private String billAddress;
   private String courier;
   private double totalPrice;
   private String billToFirstName;
@@ -50,41 +40,11 @@ public class Order implements Serializable {
   public Date getOrderDate() { return orderDate; }
   public void setOrderDate(Date orderDate) { this.orderDate = orderDate; }
 
-  public String getShipAddress1() { return shipAddress1; }
-  public void setShipAddress1(String shipAddress1) { this.shipAddress1 = shipAddress1; }
+  public String getShipAddress() { return shipAddress; }
+  public void setShipAddress(String shipAddress) { this.shipAddress = shipAddress; }
 
-  public String getShipAddress2() { return shipAddress2; }
-  public void setShipAddress2(String shipAddress2) { this.shipAddress2 = shipAddress2; }
-
-  public String getShipCity() { return shipCity; }
-  public void setShipCity(String shipCity) { this.shipCity = shipCity; }
-
-  public String getShipState() { return shipState; }
-  public void setShipState(String shipState) { this.shipState = shipState; }
-
-  public String getShipZip() { return shipZip; }
-  public void setShipZip(String shipZip) { this.shipZip = shipZip; }
-
-  public String getShipCountry() { return shipCountry; }
-  public void setShipCountry(String shipCountry) { this.shipCountry = shipCountry; }
-
-  public String getBillAddress1() { return billAddress1; }
-  public void setBillAddress1(String billAddress1) { this.billAddress1 = billAddress1; }
-
-  public String getBillAddress2() { return billAddress2; }
-  public void setBillAddress2(String billAddress2) { this.billAddress2 = billAddress2; }
-
-  public String getBillCity() { return billCity; }
-  public void setBillCity(String billCity) { this.billCity = billCity; }
-
-  public String getBillState() { return billState; }
-  public void setBillState(String billState) { this.billState = billState; }
-
-  public String getBillZip() { return billZip; }
-  public void setBillZip(String billZip) { this.billZip = billZip; }
-
-  public String getBillCountry() { return billCountry; }
-  public void setBillCountry(String billCountry) { this.billCountry = billCountry; }
+  public String getBillAddress() { return billAddress; }
+  public void setBillAddress(String billAddress) { this.billAddress = billAddress; }
 
   public String getCourier() { return courier; }
   public void setCourier(String courier) { this.courier = courier; }
@@ -130,21 +90,11 @@ public class Order implements Serializable {
 
     shipToFirstName = account.getFirstName();
     shipToLastName = account.getLastName();
-    shipAddress1 = account.getAddress1();
-    shipAddress2 = account.getAddress2();
-    shipCity = account.getCity();
-    shipState = account.getState();
-    shipZip = account.getZip();
-    shipCountry = account.getCountry();
+    shipAddress = account.getAddress();
 
     billToFirstName = account.getFirstName();
     billToLastName = account.getLastName();
-    billAddress1 = account.getAddress1();
-    billAddress2 = account.getAddress2();
-    billCity = account.getCity();
-    billState = account.getState();
-    billZip = account.getZip();
-    billCountry = account.getCountry();
+    billAddress = account.getAddress();
 
     totalPrice = cart.getSubTotal();
 

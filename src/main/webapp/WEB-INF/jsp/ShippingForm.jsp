@@ -24,34 +24,9 @@
         <form:errors path="order.shipToLastName" /></td>
     </tr>
     <tr>
-      <td>Address 1:</td>
-      <td><form:input path="order.shipAddress1" /> 
-         <form:errors path="order.shipAddress1" /></td>
-    </tr>
-    <tr>
-      <td>Address 2:</td>
-      <td><form:input path="order.shipAddress2" /> 
-         <form:errors path="order.shipAddress2" /></td>
-    </tr>
-    <tr>
-      <td>City:</td>
-      <td><form:input path="order.shipCity" /> 
-        <form:errors path="order.shipCity" /></td>
-    </tr>
-    <tr>
-      <td>State:</td>
-      <td><form:input path="order.shipState" /> 
-        <form:errors path="order.shipState" /></td>
-    </tr>
-    <tr>
-      <td>Zip:</td>
-      <td><form:input path="order.shipZip" /> 
-        <form:errors path="order.shipZip" /></td>
-    </tr>
-    <tr>
-      <td>Country:</td>
-      <td><form:input path="order.shipCountry" /> 
-        <form:errors path="order.shipCountry" /></td>
+      <td>Address:</td>
+      <td><form:input path="order.shipAddress" /> 
+         <form:errors path="order.shipAddress" /></td>
     </tr>
   </table>
   <p>
